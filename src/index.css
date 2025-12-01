@@ -1,0 +1,4 @@
+/* 1. Import Tailwind first — this must be at the TOP */
+@import 'tailwindcss';
+
+/* 2. Now put all your custom styles / overrides */
