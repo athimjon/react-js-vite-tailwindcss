@@ -1,7 +1,14 @@
+import { Navbar } from './component/index'
+import { styles } from './util/style'
+
 const App = () => {
 	return (
-		<div>
-			<h1 className='text-3x1 font-bold underline'>Hello world !</h1>;
+		<div className='bg-primary w-full overflow-hidden'>
+			<div className={`${styles.paddingX} ${styles.flexCenter}  `}>
+				<div className={`${styles.container}`}>
+					<Navbar />
+				</div>
+			</div>
 		</div>
 	)
 }

@@ -1,4 +1,37 @@
-/* 1. Import Tailwind first — this must be at the TOP */
 @import 'tailwindcss';
 
-/* 2. Now put all your custom styles / overrides */
+.sidebar {
+	animation: slide-sidebar 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-sidebar {
+	0% {
+		transform: translateY(100px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.bg-black-gradient {
+	background: linear-gradient(to top, #fff -278%, #6d6d6d -78%, #11101d 100%);
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+@theme {
+	--color-primary: #00040f;
+	--color-secondary: #00f6ff;
+	--color-lightWhite: rgba(255, 255, 255, 0.7);
+	--color-lightBlue: rgba(9, 151, 124, 0.1);
+	--font-montserrat: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+
+	--breakpoint-xs: 480px;
+	--breakpoint-ss: 620px;
+	--breakpoint-sm: 768px;
+	--breakpoint-md: 1060px;
+	--breakpoint-lg: 1200px;
+	--breakpoint-xl: 1700px;
+}
