@@ -1,4 +1,4 @@
-import { Home, Navbar, Statistics } from './component/index'
+import { Billing, Contract, Home, Navbar, Statistics } from './component/index'
 import { styles } from './util/style'
 
 const App = () => {
@@ -20,6 +20,8 @@ const App = () => {
 			<div className={`pb-primary ${styles.paddingX} ${styles.flexCenter}  `}>
 				<div className={`${styles.container}`}>
 					<Statistics />
+					<Contract />
+					<Billing />
 				</div>
 			</div>
 		</div>
