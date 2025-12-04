@@ -17,7 +17,7 @@ const Navbar = () => {
 			<img
 				src={logo}
 				alt='Logo Not found!'
-				className='w-[70px] h-[50px] cursor-pointer'
+				className='w-[60px] h-[55px] cursor-pointer'
 			/>
 			{/* NAVIGATION LINKS */}
 			<ul className='list-none sm:flex hidden justify-end items-center flex-1'>
