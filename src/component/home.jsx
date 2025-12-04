@@ -1,4 +1,5 @@
 import { discount, robot } from '../assets'
+import { Button } from '../component'
 import { styles } from '../util/style'
 
 const Home = () => {
@@ -46,6 +47,9 @@ const Home = () => {
 					odit eos omnis autem modi iusto expedita, perspiciatis asperiores
 					magnam amet.
 				</p>
+				{/* Getting Started */}
+				<Button styles={'mt-2'} />
+				{/* Gradient Background */}
 				<div className='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient' />
 				<div className='absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient' />
 				<div className='absolute z-[0] w-[50%] h-[55%] right-20 bttom-20  blue__gradient' />

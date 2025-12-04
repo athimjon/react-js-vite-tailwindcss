@@ -49,6 +49,18 @@
 	filter: blur(750px);
 }
 
+.bg-red-gradient {
+	background: linear-gradient(
+		157.81deg,
+		#ffd6d6 -43.27%,
+		/* very light red */ #ffb3b3 -21.24%,
+		/* light red */ #ff8080 12.19%,
+		/* medium red */ #ff4d4d 29.82%,
+		/* strong red */ #e60000 51.94%,
+		/* deep red */ #990000 90.29% /* dark red */
+	);
+}
+
 @theme {
 	--color-primary: #00040f;
 	--color-secondary: #00f6ff;
