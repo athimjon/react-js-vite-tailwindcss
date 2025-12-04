@@ -10,6 +10,9 @@ const Billing = () => {
 					alt='bill'
 					className='w-[100%] h-[100%] relative z-[5]'
 				/>
+
+				<div className='absolute z-[3] -left-1/2 w-[50%] h-[55%] rounded-full top-0 white__gradient' />
+				<div className='absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient' />
 			</div>
 
 			<div className={layout.sectionInfo}>
