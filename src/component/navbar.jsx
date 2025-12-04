@@ -6,6 +6,7 @@ import { styles } from '../util/style'
 
 const Navbar = () => {
 	const [toggleNav, setToggleNav] = useState(false)
+	const [active, setActive] = useState('home')
 
 	const toggleHandler = () => {
 		setToggleNav(prev => !prev)
@@ -23,9 +24,13 @@ const Navbar = () => {
 				{navigationLinks.map((nav, index) => {
 					return (
 						<li
-							className={`font-montserrat font-normal cursor-pointer text-white text-[16px] ${
-								index === navigationLinks.length - 1 ? 'mr-0' : 'mr-10'
-							}  hover:text-lightWhite transition-all duration-500`}
+							onClick={() => {
+								setActive(nav.id)
+							}}
+							className={`
+								 ${index === navigationLinks.length - 1 ? 'mr-0' : 'mr-10'} 
+								 ${active === nav.id ? 'text-white' : 'text-lightWhite'}
+								 font-montserrat font-normal cursor-pointer text-[16px] hover:text-white transition-all duration-500`}
 							key={nav.id}
 						>
 							{nav.title}
@@ -50,9 +55,13 @@ const Navbar = () => {
 						{navigationLinks.map((nav, index) => {
 							return (
 								<li
-									className={`font-montserrat font-normal cursor-pointer text-white text-[16px] ${
-										index === navigationLinks.length - 1 ? 'mr-0' : 'mr-10'
-									}  hover:text-lightWhite transition-all duration-500`}
+									onClick={() => {
+										setActive(nav.id)
+									}}
+									className={`
+								 ${index === navigationLinks.length - 1 ? 'mr-0' : 'mr-10'} 
+								 ${active === nav.id ? 'text-white' : 'text-lightWhite'}
+								 font-montserrat font-normal cursor-pointer text-[16px] hover:text-white transition-all duration-500`}
 									key={nav.id}
 								>
 									{nav.title}

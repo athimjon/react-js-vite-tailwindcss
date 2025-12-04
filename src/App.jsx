@@ -1,4 +1,4 @@
-import { Navbar } from './component/index'
+import { Home, Navbar } from './component/index'
 import { styles } from './util/style'
 
 const App = () => {
@@ -7,6 +7,11 @@ const App = () => {
 			<div className={`${styles.paddingX} ${styles.flexCenter}  `}>
 				<div className={`${styles.container}`}>
 					<Navbar />
+				</div>
+			</div>
+			<div className={`bg-primary ${styles.flexStart}`}>
+				<div className={styles.container}>
+					<Home />
 				</div>
 			</div>
 		</div>

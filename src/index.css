@@ -1,9 +1,7 @@
 @import 'tailwindcss';
-
 .sidebar {
 	animation: slide-sidebar 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
 @keyframes slide-sidebar {
 	0% {
 		transform: translateY(100px);
@@ -12,13 +10,43 @@
 		transform: translateY(0);
 	}
 }
-
 .bg-black-gradient {
 	background: linear-gradient(to top, #fff -278%, #6d6d6d -78%, #11101d 100%);
+}
+.bg-discount-gradient {
+	background: linear-gradient(130deg, #272727 0%, #11101d 100%);
+}
+.text-gradient {
+	background: radial-gradient(
+		64.18% 64.18% at 71.16% 35.69%,
+		#ffd6d6 0.89%,
+		/* very light red */ #ffb3b3 17.23%,
+		/* light red */ #ff8080 42.04%,
+		/* medium red */ #ff4d4d 55.12%,
+		/* strong red */ #e60000 71.54%,
+		/* deep red */ #990000 100% /* dark red */
+	);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 * {
 	scroll-behavior: smooth;
+}
+
+.blue__gradient {
+	background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+	filter: blur(123px);
+}
+
+.pink__gradient {
+	background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+	filter: blur(900px);
+}
+
+.white__gradient {
+	background: rgba(255, 255, 255, 0.6);
+	filter: blur(750px);
 }
 
 @theme {
