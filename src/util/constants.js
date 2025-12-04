@@ -1,3 +1,5 @@
+import { send, shield, star } from '../assets/index'
+
 export const statistics = [
 	{
 		id: 1,
@@ -32,5 +34,31 @@ export const navigationLinks = [
 	{
 		id: 'clients',
 		title: 'Mijozlar',
+	},
+]
+
+export const features = [
+	{
+		id: 1,
+		icon: star,
+		title: 'Mukofotlar',
+		content:
+			'Eng yaxshi kredit kartalari aksiyalar va sovrinlarning ajoyib kombinatsiyasini taklif qiladi.',
+	},
+
+	{
+		id: 2,
+		icon: shield,
+		title: '100% Himoyalangan',
+		content:
+			"Ma'lumotlaringiz va tranzaktsiyalaringiz xavfsiz ekanligiga ishonch hosil qilish uchun faol choral.",
+	},
+
+	{
+		id: 3,
+		icon: send,
+		title: "Balansni o'tkazish",
+		content:
+			"Balansni o'tkazish kredit kartasi sizga foizlarni to'lashda ko'p pul tejash imkonini beradi.",
 	},
 ]
